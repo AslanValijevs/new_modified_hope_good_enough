@@ -17,12 +17,12 @@ EMAIL_PROVIDERS = {
 }
 
 #MySQL Database
-db_Host ='emaildbserver.mysql.database.azure.com'
-db_User ='mailadmin'
-db_Password ='Wparolj123!'
-db_Name ='maildb1'
+db_Host =''
+db_User =''
+db_Password =''
+db_Name =''
 
 #MongoDB Database
-mn_Host = 'mongodb://localhost:27017/'
-mn_Name = 'Mongo_email_db'
-mn_Collection = 'Email'
+mn_Host = ''
+mn_Name = ''
+mn_Collection = ''
