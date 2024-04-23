@@ -16,15 +16,6 @@ def get_provider_servers(email_addr):
         raise ValueError('Email provider not recognized. Please input server settings manually.')
 
 
-def has_attachments(email_message):
-    attachment_count = 0
-    for part in email_message.walk():
-        if part.get_content_maintype() == 'multipart' or part.get('Content-Disposition') is None:
-            continue
-        attachment_count += 1
-    return attachment_count > 0, attachment_count
-
-
 def process_email(raw_email):
     email_body = ""
     attachments = []
